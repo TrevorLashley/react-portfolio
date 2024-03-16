@@ -1,40 +1,4 @@
-.bar {
-  margin: auto;
-  display: block;
-  width: fit-content;
-  padding: 10px;
-  
-}
-
-.navLink {
-
-  margin-left: 20px;
-  
-}
-
-.barContainer {
-  margin-bottom: 10px;
-  width: 100%;
-  border-bottom: 2px solid;
-}
-
-.user {
-
-  margin: auto;
-  display: block;
-  width: fit-content;
-  padding: 10px;
-  text-align: center;
-  
-}
-
-.user p {
-
-  max-width: 60ch;
- 
-}
-
-.user ul {
-  display: inline-block;
-  text-align: left;
+body {
+  background: 0% 0% / cover no-repeat rgb(29, 29, 29);
+  color: rgb(244, 244, 244);
 }
