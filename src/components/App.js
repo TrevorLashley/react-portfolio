@@ -3,13 +3,22 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import styled from "styled-components";
 import About from "./About.js";
+import Projects from "./Projects.js";
+import Contact from "./Contact.js";
+import { useRef } from "react";
 const App = () => {
+const homeRef = useRef(null)
+const aboutRef = useRef(null)
+const projectsRef = useRef(null)
+const contactRef = useRef(null)
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar aboutRef={aboutRef} homeRef={homeRef} projectsRef={projectsRef} contactRef={contactRef}></NavBar>
       <MainContent>
-        <Home></Home>
-        <About></About>
+        <Home ref={homeRef}></Home>
+        <About ref={aboutRef}></About>
+        <Projects ref={projectsRef}></Projects>
+        <Contact ref={contactRef}></Contact>
       </MainContent>
 
       {/* <Route path="/" element={<Home></Home>}> */}
@@ -29,5 +38,6 @@ const MainContent = styled.div`
   justify-content: center;
   position: relative;
   margin: 100px 5% 0 5%;
+  gap: 150px;
 
 `;

@@ -4,18 +4,18 @@ import { html5 } from "react-icons-kit/fa/html5";
 import { Icon } from "react-icons-kit";
 import {css3} from 'react-icons-kit/fa/css3'
 import {socialJavascript} from 'react-icons-kit/ionicons/socialJavascript'
+import { forwardRef } from "react";
 
-
-const Home = () => {
+const Home = forwardRef((props,ref) => {
   return (
-    <div>
+    <div  ref={ref}>
       <div style={{ display: "flex", gap: "15px" }}>
         <ProfilePicture src={Picture}></ProfilePicture>
 
         <div>
           <h1>Concordia Bootcamps Developper</h1>
 
-          <p>
+          <p style={{fontSize: "1.3em"}}>
             Hello my name is Trevor Lashley welcome to my React web portfolio
             featuring some of my previous projects.
           </p>
@@ -30,7 +30,7 @@ const Home = () => {
     </IconsContainer>
     </div>
   );
-};
+});
 
 export default Home;
 
