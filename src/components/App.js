@@ -2,12 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import styled from "styled-components";
+import About from "./About.js";
 const App = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <MainContent><Home></Home></MainContent>
-      
+      <MainContent>
+        <Home></Home>
+        <About></About>
+      </MainContent>
 
       {/* <Route path="/" element={<Home></Home>}> */}
       {/* </Route> */}
@@ -25,5 +28,6 @@ const MainContent = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 100px;
+  margin: 100px 5% 0 5%;
+
 `;
