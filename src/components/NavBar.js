@@ -38,7 +38,6 @@ padding: 10px;
 const StyledNavButton = styled.button`
 
    margin-left: 20px;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
    text-decoration: none;
    font-size: 1.2em;
    font-weight: bold;
