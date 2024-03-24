@@ -8,7 +8,7 @@ const Contact = forwardRef((props,ref) => {
 
 <SectionTitle>Contact Me!</SectionTitle>
 
-<div style= {{display:"flex", gap: "30px", fontSize: "1.3em"}}>
+<div className="responsive-columns"style= {{gap: "30px", fontSize: "1.3em"}}>
 <p style={{ width: "300px"}}>Email: trevor.lashley@hotmail.ca</p>
 
 <p style={{ width: "300px"}}>Thanks for checking out my Portfolio shoot me an E-mail to collab! 😃</p>

@@ -9,7 +9,7 @@ import { forwardRef } from "react";
 const Home = forwardRef((props,ref) => {
   return (
     <div  ref={ref}>
-      <div style={{ display: "flex", gap: "15px" }}>
+      <div className="responsive-columns" style={{ gap: "15px" }}>
         <ProfilePicture src={Picture}></ProfilePicture>
 
         <div>

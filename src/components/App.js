@@ -40,4 +40,6 @@ const MainContent = styled.div`
   margin: 100px 5% 0 5%;
   gap: 150px;
 
+  
+
 `;
